@@ -1,8 +1,26 @@
+
+function NoteCard(props) {
+    return(
+        <div className="noteCard">
+            <h1>{props.noteTitle}</h1>
+            <p>{props.noteContent}</p>
+        </div>
+    );
+}
+
 const Note = () => {
     return (  
         <div className="Note">
-            <h1>This is the note title</h1>
-            <p> This is a note content</p>
+            
+            
+            <NoteCard 
+                noteTitle="This is the note title"
+                noteContent="This is a note content"
+            
+            />
+            
+            
+            
         </div>
     );
 }
