@@ -31,7 +31,7 @@ footer {
 
 }
 
-.Note {
+.noteCard {
     background-color: #fff;
     border-radius: 7px;
     box-shadow: 0 2px 5px #ccc;
@@ -42,12 +42,8 @@ footer {
     
 }
 
-.Note h1 {
+.noteCard h1 {
     font-size: 1.1em;
     margin-bottom: 10px;
 }
 
-.Test img {
-    width: 100px;
-    
-}

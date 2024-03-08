@@ -1,12 +1,13 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import Note from "./Note"
+import Notes from "./Notes";
+
 
 function App() {
     return (
         <div className="App">
             <Header />
-            <Note />
+            <Notes />
             <Footer />
             
         </div>
