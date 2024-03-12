@@ -22,6 +22,10 @@ const CreateArea = (props) => {
 
     function submitNote(event) {
         props.onAdd(note);
+        setNote({
+            title: "",
+            content: ""
+        });
         event.preventDefault(); //prevent the page reload after click the button
     }
 
