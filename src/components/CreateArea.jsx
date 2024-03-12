@@ -2,7 +2,7 @@ import { useState } from "react";
 
 
 
-const CreateArea = () => {
+const CreateArea = (props) => {
 
     const [note, setNote] = useState({
         title: "",
@@ -21,8 +21,8 @@ const CreateArea = () => {
     }
 
     function submitNote(event) {
-
-        event.preventDefault();
+        props.onAdd(note);
+        event.preventDefault(); //prevent the page reload after click the button
     }
 
 
