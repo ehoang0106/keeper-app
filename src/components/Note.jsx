@@ -1,28 +1,18 @@
 
-function NoteCard(props) {
+
+function Note(props) {
+    function handleClick() {
+        props.onDelete(props.id);
+    }
+
     return(
-        <div className="noteCard">
-            <h1>{props.noteTitle}</h1>
-            <p>{props.noteContent}</p>
+        <div className="note">
+            <h1>{props.title}</h1>
+            <p>{props.content}</p>
+            <button onClick={handleClick}>DELETE</button>
         </div>
     );
 }
 
-const Note = () => {
-    return (  
-        <div className="Note">
-            
-            
-            <NoteCard 
-                noteTitle="This is the note title"
-                noteContent="This is a note content"
-            
-            />
-            
-            
-            
-        </div>
-    );
-}
 
 export default Note;
